@@ -1,4 +1,4 @@
-body {background-color: rgb(21, 80, 80);}
-h1 {color: navy;}
-li {color: blue; font-size: 20px;}
-li:hover {color: rgb(245, 9, 233);}
+body {background-color: rgb(13, 30, 66);}
+h1 {color: rgb(6, 197, 165);}
+li,a {color: rgb(36, 170, 108); font-size: 20px;}
+li:hover,a:hover {color: rgb(175, 73, 170);}
