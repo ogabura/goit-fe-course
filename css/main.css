@@ -7,5 +7,5 @@ li {color: rgb(36, 170, 108);
 
 a {text-decoration: none;}
 
-li:hover,a:hover {color: rgb(175, 73, 170);
+a:hover {color: rgb(175, 73, 170);
     text-decoration: none;}
