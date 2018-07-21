@@ -39,7 +39,7 @@ body {
     display: block;
 }
 
-.menu .nav a:hover {
+.menu .nav a:hover{
     color: #aaa;
     background: #eee;
 }
