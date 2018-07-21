@@ -16,6 +16,7 @@ body {
 
 .inner-box {
     /*margin: 40px 10px;*/
+    /*border: 1px dotted red;*/
     padding: 5px 5px;
     /*height: 75px;
     width: 150px;*/
@@ -26,6 +27,11 @@ body {
 
 .center {
     margin: auto;
+}
+
+-img {
+    /*max-width: 465px;*/
+    object-fit: cover;
 }
 
 p.title {
