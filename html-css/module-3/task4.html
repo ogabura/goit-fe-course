@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>count the number of ID selectors in the selector (= a)</li>
+        <li>count the number of class selectors, attributes selectors, and pseudo-classes in the selector (= b)</li>
+        <li>count the number of type selectors and pseudo-elements in the selector (= c)</li>
+        <li>ignore the universal selector</li>
+    </ul>
+    <p>#myid:focus /* a=1 b=1 c=0 -> specificity =   110 */</p>
+    <p>.menu > li > a:hover> /* a=0 b=2 c=2 -> specificity =   022 */</p>
+    <p>#myid > ul > li a:hover /* a=1 b=1 c=3 -> specificity =   113 */</p>
+</body>
+</html>
