@@ -1,11 +1,32 @@
-body {background-color: rgb(13, 30, 66);}
+body {background-color: rgb(13, 30, 66);
+    background-image: url(../img/paper@1x.jpg);
+    /*background-repeat: no-repeat;*/
+    background-size: cover
+    /*opacity: 0,5;*/
+}
+/*body:after {
+    content: "";
+    background: url(../img/paper@1x.jpg);
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;  
+  }*/
 
-h1 {color: rgb(6, 197, 165);}
+h1 {color: rgb(49, 4, 253);
+}
 
-li {color: rgb(36, 170, 108);
-    font-size: 20px;}
+li {color: rgb(25, 116, 73);
+    font-size: 20px;
+}
 
-a {text-decoration: none;}
+a {text-decoration: none;
+}
 
 a:hover {color: rgb(175, 73, 170);
-    text-decoration: none;}
+    text-decoration: none;
+}
