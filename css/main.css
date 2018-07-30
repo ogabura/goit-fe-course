@@ -24,6 +24,16 @@ li {color: rgb(25, 116, 73);
     font-size: 20px;
 }
 
+.checked :after {  
+    background: url("../img/checked.png");
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+    display: inline/*-block*/;
+    content: "";
+    position: absolute;
+}  
+
 a {text-decoration: none;
 }
 
