@@ -61,7 +61,8 @@ ul.nav:after {
     /*border: 1px dotted red;*/
     margin: 0 auto;
     padding: 0px 0px;
-    width: 100%;
+    max-width: 960px;
+    min-width: 421px;
     text-align: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 8px rgba(5, 5, 5, 0.5);
