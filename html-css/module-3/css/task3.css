@@ -168,3 +168,7 @@ a.button:hover {
 a.button:active {
     background: rgba(158, 155, 155, 0.2);
 }
+
+a.button:focus {
+    border: lightblue solid 1px;
+}
