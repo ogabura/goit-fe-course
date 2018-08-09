@@ -4,15 +4,15 @@ body {
     text-align: center;    
 }
 
-main {
-    margin: 
+/*main {
+    margin-top: 64px;
 }
-
+*/
 .menu{
     margin: 0;
     padding: 0;
     width: 573px;
-    border:1px red dotted;
+    /*border:1px red dotted;*/
     display: inline-block;    
 }
 
@@ -45,8 +45,8 @@ ul.nav:after {
 
 .menu .nav a {
     font-family: 'Playfair Display', serif; /*подключаем шрифт*/
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: regular;
+    font-size: 14px;
     color: #626262;
     line-height: 50px;
     text-transform: uppercase;
@@ -55,23 +55,23 @@ ul.nav:after {
 }
 
 .menu .nav a:hover{
-    color: rgba(99, 150, 247, 0.815);
+    color:rgba(158, 155, 155, 0.61);
 }
 .outer-box {
     /*border: 1px dotted red;*/
     margin: 0 auto;
-    padding: 20px 0px;
-    width: 960px;
+    padding: 0px 0px;
+    width: 100%;
     text-align: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 8px rgba(5, 5, 5, 0.5);
 }
 
 .inner-box {
-    /*margin: 40px 10px;*/
+    margin: 64px 0 69px;
     /*padding: 5px 5px;*/
     /*height: 75px;*/
-    width: 450px;
+    width: 421px;
     /*width: calc(50% - 16px);*/
     /*background-color: #EF6C00;*/
     /*border: 1px dotted red;*/
@@ -79,19 +79,23 @@ ul.nav:after {
     vertical-align:top;
 }
 
+/*div.inner-box:nth-child(n+3){
+    margin-top: 133px;
+}
+
 /*выравниваем колонки статьи относительно центра*/
-.inner-box:first-child {
-    margin-right: 12px;
+.inner-box:nth-last-child(2n-1) {
+    margin-right: 30px;
 } 
 
-.inner-box:last-child {
-    margin-left: 12px;
+.inner-box:nth-last-child(2n) {
+    margin-left: 30px;
 } 
 
 /*левую картинку поместим с помощью бекграунд-ковер*/
 .image {
-    height:275px;
-    width:450px;
+    height:281px;
+    width:421px;
     background: #212121 url("../img/concert.jpg") no-repeat;
     background-size:cover;
 }
@@ -101,20 +105,33 @@ ul.nav:after {
 }
 */
 p.title {
-    margin: 15px 0;
+    margin: 29px 0 0;
     text-align: left;
-    color: lightslategray;
-    font-size: 16px;
+    color: #b4ad9e;
+    font-family: 'Ubuntu', serif; /*подключаем шрифт*/
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
 }
 
 h2 {
-    color: rgb(53, 53, 53);
-    font-size: 29px;
+    color: #626262;
+    margin: 24px 0 0;
+    font-family: 'Playfair Display', serif; /*подключаем шрифт*/
+    font-weight: lighter;
+    font-size: 30px;
     text-align: left;
+    line-height: 1;
 }
 
 p.text {
-    margin: 0;
+    color: #626262;
+    margin: 30px 0 0;
+    font-family: 'Playfair Display', serif; /*подключаем шрифт*/
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 24px;
     padding: 0px;
     text-align: left;
 }
@@ -122,4 +139,31 @@ p.text {
 /*убираем отступ внизу картинки*/
 img {
     display: block;
+}
+
+a.button {
+    margin: 0 auto 70px;
+    width: 164px;
+    height: 60px;
+    display: inline-block;
+    color: #626262;
+    font-family: 'Playfair Display', serif; /*подключаем шрифт*/
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    user-select: none;
+    /*padding: .5em 2em;*/
+    outline: none;
+    border: #626262a2 solid 1px;
+    border-radius: 1px;
+    transition: 0.2s;
+    line-height: 60px;
+} 
+
+a.button:hover {
+    background: rgba(158, 155, 155, 0.2);
+}
+
+a.button:active {
+    background: rgba(158, 155, 155, 0.2);
 }
