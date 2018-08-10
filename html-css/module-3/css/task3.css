@@ -86,20 +86,20 @@ ul.nav:after {
 
 /*выравниваем колонки статьи относительно центра*/
 .inner-box:nth-last-child(2n-1) {
-    margin-right: 30px;
+    margin-right: 60px;
 } 
-
+/*
 .inner-box:nth-last-child(2n) {
     margin-left: 30px;
-} 
+} */
 
 /*левую картинку поместим с помощью бекграунд-ковер*/
-.image {
+/*.image {
     height:281px;
     width:421px;
     background: #212121 url("../img/concert.jpg") no-repeat;
     background-size:cover;
-}
+}*/
 
 /*.center {
     margin: auto;
