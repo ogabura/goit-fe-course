@@ -55,7 +55,7 @@ ul.nav:after {
 }
 
 .menu .nav a:hover{
-    color:rgba(158, 155, 155, 0.61);
+    color:#03a9f4;
 }
 .outer-box {
     /*border: 1px dotted red;*/
@@ -64,6 +64,7 @@ ul.nav:after {
     max-width: 960px;
     min-width: 421px;
     text-align: center;
+    font-size: 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 8px rgba(5, 5, 5, 0.5);
 }
