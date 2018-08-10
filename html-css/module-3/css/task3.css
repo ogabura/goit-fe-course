@@ -147,8 +147,9 @@ button {
     margin: 0 auto 70px;
     width: 164px;
     height: 60px;
-    display: inline-block;
+    /*display: inline-block;*/
     color: #626262;
+    background-color: #fff;
     font-family: 'Playfair Display', serif; /*подключаем шрифт*/
     font-weight: lighter;
     font-size: 20px;
