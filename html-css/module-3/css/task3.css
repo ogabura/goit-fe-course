@@ -45,7 +45,7 @@ ul.nav:after {
 
 .menu .nav a {
     font-family: 'Playfair Display', serif; /*подключаем шрифт*/
-    font-weight: regular;
+    font-weight: bold;
     font-size: 14px;
     color: #626262;
     line-height: 50px;
@@ -156,7 +156,7 @@ button {
     user-select: none;
     /*padding: .5em 2em;*/
     outline: none;
-    border: #626262a2 solid 1px;
+    border: #626262 solid 1px;
     border-radius: 1px;
     transition: 0.2s;
     line-height: 60px;
@@ -171,5 +171,5 @@ button:active {
 }
 
 button:focus {
-    border: lightblue solid 1px;
+    border: #03a9f4 solid 1px;
 }
