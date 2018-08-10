@@ -143,7 +143,7 @@ img {
     display: block;
 }
 
-a.button {
+button {
     margin: 0 auto 70px;
     width: 164px;
     height: 60px;
@@ -162,14 +162,14 @@ a.button {
     line-height: 60px;
 } 
 
-a.button:hover {
+button:hover {
     background: rgba(158, 155, 155, 0.2);
 }
 
-a.button:active {
+button:active {
     background: rgba(158, 155, 155, 0.2);
 }
 
-a.button:focus {
+button:focus {
     border: lightblue solid 1px;
 }
