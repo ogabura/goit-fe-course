@@ -6,6 +6,7 @@ body {
     font-family: 'Playfair Display', serif; /*подключаем шрифт*/
     font-weight: lighter;
     font-size: 14px;
+    line-height: 24px;
     border: 1px solid red;
 }
 .container {
@@ -15,12 +16,13 @@ body {
     border: 1px solid green;
 }
 
-.main-nav {
+header {
     margin-bottom: 78px;
 }
+
 .nav {
     border:1px blue solid;
-    padding-left: 0;
+    padding: 0;
     font-size: 0;
 }
 
@@ -56,10 +58,17 @@ body {
 */
 .inner-box {
     margin: 0 auto;
-    width: 420px;
-    border: 1px dotted red;
-    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    /*width: 420px;*/
+    border: 1px dotted red;    
     vertical-align:top;
+}
+
+.inner-li {
+    border: blueviolet solid 1px;
+    width: 420px;
+    display: inline-block;
 }
 
 /*div.inner-box:nth-child(n+3){
@@ -105,7 +114,6 @@ h2 {
 
 p.text {
     margin: 30px 0 0;
-    line-height: 24px;
     text-align: left;
 }
 
