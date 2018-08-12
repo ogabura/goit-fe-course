@@ -6,11 +6,13 @@ body {
     font-family: 'Playfair Display', serif; /*подключаем шрифт*/
     font-weight: lighter;
     font-size: 14px;
-    width: 1200px;
     border: 1px solid red;
 }
 .container {
-    padding: 52px 0;
+    padding: 52px 0;    
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid green;
 }
 
 nav {
