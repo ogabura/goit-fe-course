@@ -55,6 +55,7 @@ header {
 .inner-li {
     width: 420px;
     display: inline-block;
+    font-size: 14px;
 }
 
 .inner-li:nth-last-of-type(n+3) {
