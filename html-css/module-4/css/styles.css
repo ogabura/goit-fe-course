@@ -1,0 +1,88 @@
+html{
+	box-sizing:border-box;
+}
+
+*,
+*::before, 
+*::after{
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    color:  #555252;
+    font-family: 'Open Sans', sans-serif; /*подключаем шрифт*/
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.clearfix::after{
+    display: table; /* можно написать block, но table сработает даже на старых браузерах*/
+    content: "";
+    clear: both;
+  }
+
+.nav-menu {
+    width: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {float: left;
+}
+
+.item a {
+    padding: 5px;    
+    font-size: 14px;
+    font-weight: 700;
+    /*line-height: 32px;*/
+    text-align: left;
+    float: left;
+    color:  #555252;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.item a:hover {
+    color:  #1abc9c;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 32px;
+    text-align: left;
+    float: left;
+    color:  #555252;
+}
+.logo:first-letter {
+    color:  #1abc9c;
+}
+
+
+h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 102px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2::after {
+    margin: 0 auto;
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color:  #4ec6ab;
+    content: "";
+}
+
+ul {
+    list-style-type: none;
+    
+}
