@@ -16,33 +16,43 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    width: 1110px;
 }
 
 .clearfix::after{
     display: table; /* можно написать block, но table сработает даже на старых браузерах*/
     content: "";
     clear: both;
-  }
+}
 
 .nav-menu {
-    width: 700;
-    padding: 0;
     margin: 0;
+    outline: green;
+    height: 34px;
+    width: 470px;
+    float: right;
 }
 
-.nav-menu li {float: left;
+.nav-menu li {
+    float: right;
+    right:50%;
 }
 
+.nav-menu li:not(:first-child) {
+    margin-right: 30px;
+}
 .item a {
-    padding: 5px;    
     font-size: 14px;
     font-weight: 700;
-    /*line-height: 32px;*/
-    text-align: left;
+    line-height: 34px;
+    text-align: right;
     float: left;
     color:  #555252;
     text-transform: uppercase;
     text-decoration: none;
+}
+.item a:nth-child(n+2) {
+    margin-right: 60px;
 }
 .item a:hover {
     color:  #1abc9c;
@@ -54,8 +64,7 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 32px;
-    text-align: left;
+    line-height: 34px;
     float: left;
     color:  #555252;
 }
@@ -73,8 +82,18 @@ h2 {
     text-transform: uppercase;
     text-align: center;
 }
-h2::after {
-    margin: 0 auto;
+
+.first-title::after {
+    margin: 0 auto 95px;
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color:  #4ec6ab;
+    content: "";
+}
+
+.second-title::after {
+    margin: 0 auto 80px;
     display: block;
     width: 164px;
     height: 7px;
@@ -83,6 +102,73 @@ h2::after {
 }
 
 ul {
-    list-style-type: none;
-    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+
+.features-list-item {
+    width: 255px;
+    height: 322px;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.features-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+/*.features-list-item:nth-last-of-type(n+4) {
+    margin-bottom: 50px;
+}*/
+
+.img-prod {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.features-list-descr {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+}
+
+.features-list-name,
+.features-list-price {
+    float: left;
+    margin: 0;
+    font-size: 18px;
+    color:#fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 600;   
+}
+
+.features-list-name{
+    width: 200px;
+    background-color: #323232;
+    padding-left:14px;
+    padding-right:14px;
+}
+
+.features-list-price{
+    width:55px;
+    background-color: #8c8c8c;
+    text-align: center;
+}
+
+.features-list li:hover .features-list-name{
+    background-color: #1abc9c;
+    transition: 0.2s;
+}
+
+.features-list li:hover .features-list-price{
+    background-color: #7fd9c7;
+    transition: 0.2s;
+}
+
+.features-list-item{
+    cursor:pointer;
 }
