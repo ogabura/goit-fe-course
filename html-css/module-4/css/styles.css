@@ -9,7 +9,7 @@ html{
 }
 
 body {
-    margin: 0 auto;
+    margin: 33px auto;
     padding: 0;
     color:  #555252;
     font-family: 'Open Sans', sans-serif; /*подключаем шрифт*/
