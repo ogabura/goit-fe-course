@@ -72,6 +72,23 @@ body {
     color:  #1abc9c;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hydden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 h2 {
     margin: 0;
@@ -107,11 +124,14 @@ ul {
     list-style-type: none;    
 }
 
+.features-list {
+    margin-bottom: 75px;
+}
+
 .features-list-item {
     width: 255px;
     height: 322px;
     float: left;
-    margin-bottom: 30px;
     position: relative;
 }
 
@@ -119,9 +139,9 @@ ul {
     margin-right: 30px;
 }
 
-/*.features-list-item:nth-last-of-type(n+4) {
-    margin-bottom: 50px;
-}*/
+.features-list-item:nth-last-of-type(n+5) {
+    margin-bottom: 30px;
+}
 
 .img-prod {
     display: block;
@@ -171,4 +191,73 @@ ul {
 
 .features-list-item{
     cursor:pointer;
+}
+
+.lattest-news {
+    margin-bottom: 80px;
+}
+
+.lattest-news-item {
+    width: 350px;
+    height: 500px;
+    float: left;  
+}
+
+.lattest-news-item:nth-last-child(n+2) {
+    margin-right: 30px;
+}
+
+img {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.lattest-news-text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+}
+
+.lattest-news-text::after {
+    margin: 15px 0 30px ;
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color:  #4ec6ab;
+    content: "";
+}
+
+.lattest-news-text1 {
+    margin: 0 0 15px;
+    height: 66px;
+    overflow: hidden;
+    text-align: left;
+}
+
+li .link {
+    margin: 0;
+    padding: 13px 40px;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+    background-color: #4ec6ab;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    user-select: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+.link:hover {
+    background-color: #187762;
+}
+
+.link:focus {
+    outline: 1px solid  rgb(0, 0, 173);
 }
