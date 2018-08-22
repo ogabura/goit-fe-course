@@ -9,14 +9,24 @@ html{
 }
 
 body {
-    margin: 33px auto;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     color:  #555252;
     font-family: 'Open Sans', sans-serif; /*подключаем шрифт*/
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    width: 1110px;
+    
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 40px 15px 0;
+}
+
+.menu-wrapper {
+    margin-bottom: 90px;
 }
 
 .clearfix::after{
@@ -29,7 +39,7 @@ body {
     margin: 0;
     outline: green;
     height: 34px;
-    width: 470px;
+    /*width: 470px;*/
     float: right;
 }
 
@@ -91,17 +101,18 @@ input[type="radio"].visually-hydden {
 }
 
 h2 {
-    margin: 0;
+    margin-bottom: 90px;
+    padding-bottom: ;
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 900;
-    line-height: 102px;
+    line-height: 58px;
     text-transform: uppercase;
     text-align: center;
 }
 
 .first-title::after {
-    margin: 0 auto 95px;
+    margin: 22px auto;
     display: block;
     width: 164px;
     height: 7px;
@@ -110,7 +121,7 @@ h2 {
 }
 
 .second-title::after {
-    margin: 0 auto 80px;
+    margin: 22px auto;
     display: block;
     width: 164px;
     height: 7px;
@@ -125,7 +136,7 @@ ul {
 }
 
 .features-list {
-    margin-bottom: 75px;
+    margin-bottom: 90px;
 }
 
 .features-list-item {
@@ -143,7 +154,7 @@ ul {
     margin-bottom: 30px;
 }
 
-.img-prod {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -207,9 +218,8 @@ ul {
     margin-right: 30px;
 }
 
-img {
-    display: block;
-    margin-bottom: 7px;
+.img-news {
+    margin-bottom: 10px;
 }
 
 .lattest-news-text {
