@@ -51,19 +51,23 @@ body {
 .nav-menu li:not(:first-child) {
     margin-right: 30px;
 }
+
 .item a {
     font-size: 14px;
     font-weight: 700;
     line-height: 34px;
     text-align: right;
-    float: left;
+    display: block;
+    padding: 5px 10px;
     color:  #555252;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 .item a:nth-child(n+2) {
     margin-right: 60px;
 }
+
 .item a:hover {
     color:  #1abc9c;
 }
@@ -78,6 +82,7 @@ body {
     float: left;
     color:  #555252;
 }
+
 .logo:first-letter {
     color:  #1abc9c;
 }
@@ -95,6 +100,10 @@ input[type="radio"].visually-hydden {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.features-wrapper {
+    margin-bottom: 90px;
 }
 
 h2 {
@@ -129,10 +138,6 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;    
-}
-
-.features-list {
-    margin-bottom: 90px;
 }
 
 .features-list-item {
@@ -219,7 +224,7 @@ img {
 }
 
 .lattest-news-text {
-    margin: 0;
+    margin: 0 0 30px ;
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
@@ -227,7 +232,7 @@ img {
 }
 
 .lattest-news-text::after {
-    margin: 15px 0 30px ;
+    margin: 15px 0 0;
     display: block;
     width: 136px;
     height: 3px;
