@@ -38,7 +38,7 @@ body {
 .nav-menu {
     margin: 0;
     outline: green;
-    height: 34px;
+    /*height: 34px;*/
     /*width: 470px;*/
     float: right;
 }
@@ -55,7 +55,7 @@ body {
 .item a {
     font-size: 14px;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 24px;
     text-align: right;
     display: block;
     padding: 5px 10px;
@@ -212,13 +212,15 @@ img {
 
 .lattest-news-item {
     width: 350px;
-    height: 500px;
-    float: left;  
-}
-
-.lattest-news-item:nth-last-child(n+2) {
+    float: left; 
     margin-right: 30px;
 }
+
+.lattest-news-item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+
 
 .img-news {
     margin-bottom: 10px;
