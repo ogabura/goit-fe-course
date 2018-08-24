@@ -206,13 +206,13 @@ img {
     cursor:pointer;
 }
 
-.lattest-news {
-    margin-bottom: 50px;
+.lattest-news-wrapper {
+    margin-bottom: 80px;
 }
 
 .lattest-news-item {
     width: 350px;
-    float: left; 
+    float: left;
     margin-right: 30px;
 }
 
