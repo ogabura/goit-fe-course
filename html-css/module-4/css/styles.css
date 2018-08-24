@@ -213,7 +213,7 @@ img {
 .lattest-news-item {
     width: 350px;
     float: left; 
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
 }
 
 .lattest-news-item:nth-child(3n+3) {
