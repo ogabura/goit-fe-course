@@ -80,6 +80,7 @@ body {
     text-decoration: none;
     line-height: 34px;
     float: left;
+    display: inline-block;
     color:  #555252;
 }
 
