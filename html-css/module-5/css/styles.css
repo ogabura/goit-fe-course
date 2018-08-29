@@ -444,3 +444,8 @@ margin-bottom: 8px;
     background-image: url(../img/basket.png);
 }
 
+.slider1 {
+    height: 600px;
+    background: url(../img/slide4.png) no-repeat center center;
+    background-size: cover;
+}
