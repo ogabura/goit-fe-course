@@ -103,8 +103,9 @@ input[type="radio"].visually-hydden {
     overflow: hidden;
 }
 
-.features-wrapper {
-    margin-bottom: 90px;
+.features-wrapper, .section2{
+    margin-bottom: 90px;    
+    background-color: #0f254e;
 }
 
 h2 {

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div >
+<div class="wrapper">
     <header class="container">
         <nav class="menu-wrapper clearfix">
             <a class="logo" href="#">Mart</a>
@@ -25,19 +25,20 @@
             </ul>
         </nav>
     </header>
+    <div class="backgroundcolor">
     <main>
         <h1 class="visually-hidden">Best shop of the world</h1>
         <div class="section1">
-            <div class="slider1">
+            <!--<div class="slider1">-->
                 <!--div><img src="img/slide4.png" width="" height="600" title="Girls on the street" alt="slider1">-->
-            </div>
+            <!--</div>-->
             <section class="container slider">
+                <button class="button slider-l"><span class="visually-hidden">preview slide</span></button>
+                <button class="button slider-r"><span class="visually-hidden">next slide</span></button>      
                 <div class="slider-text">
                     <h3 class="slider-h">affordable paris tours</h3>
                     <p class="slider-p">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-                </div>     
-                <div class="slider-button-left"></div>
-                <div class="slider-button-left"></div>           
+                </div>      
             </section>
         </div>
         <div class="section2">
@@ -63,7 +64,7 @@
                                         <a class="icon-clock" href="#"><span class="visually-hidden">clock</span></a>
                                     </li>
                                 </ul>
-                                <button class="basket">
+                                <button class="button basket">
                                     add to cart
                                 </button>
                             </div>
@@ -88,7 +89,7 @@
                                         <a class="icon-clock" href="#"><span class="visually-hidden">clock</span></a>
                                     </li>
                                 </ul>
-                                <button class="basket">
+                                <button class="button basket">
                                     add to cart
                                 </button>
                             </div>
@@ -113,7 +114,7 @@
                                         <a class="icon-clock" href="#"><span class="visually-hidden">clock</span></a>
                                     </li>
                                 </ul>
-                                <button class="basket">
+                                <button class="button basket">
                                     add to cart
                                 </button>
                             </div>
@@ -138,7 +139,7 @@
                                         <a class="icon-clock" href="#"><span class="visually-hidden">clock</span></a>
                                     </li>
                                 </ul>
-                                <button class="basket">
+                                <button class="button basket">
                                     add to cart
                                 </button>
                             </div>
@@ -150,28 +151,13 @@
     </main>
     
     <footer>
-        <div class="container">
-            <p class="footer-text">All Rights Reserved &#169 Dokan | Designed <span>ThemenGraph</span></p>
+        <div class="container footer-wrapper">
+            <p class="footer-text">All Rights Reserved &copy; Dokan | Designed 
+                <a href="#">ThemenGraph</a>
+            </p>
         </div>
-        <div class="wrapper-icons">
-                <div class="icons">
-                    <ul class="list-icons clearfix">
-                        <li> 
-                            <a class="icon-heart" href="#"><span class="visually-hidden">heart</span></a>
-                        </li>
-                        <li>
-                            <a class="icon-arrows" href="#"><span class="visually-hidden">arrows</span></a>
-                        </li>
-                        <li>
-                            <a class="icon-clock" href="#"><span class="visually-hidden">clock</span></a>
-                        </li>
-                    </ul>
-                    <button class="basket">
-                        add to cart
-                    </button>
-                </div>
-            </div>
     </footer>
+</div>
 </div>    
 </body>
 </html>
