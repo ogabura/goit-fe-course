@@ -10,11 +10,62 @@ html{
 
 body {
     color:  #555252;
-    font-family: 'Open Sans', sans-serif; /*подключаем шрифт*/
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    
+    line-height: 24px;    
+}
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hydden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+
+h3 {    
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 82px; 
+    text-align: left;
+}
+
+h2 {
+    margin: 0 auto 76px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .backgroundcolor {
@@ -26,54 +77,19 @@ body {
     padding: 32px 0 0;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .container {
     position: relative;
     width: 1140px;
     margin: 0 auto;
-    padding: 0px 15px;
-    /*background-color: rgb(27, 34, 36);*/
-    
-}
-
-footer {
-    height: 88px;
-    background-color: #323232;
-    position: relative;
-}
-
-.footer-text {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, 50%);
-}
-.footer-text a {
-    color:  #1abc9c;
-    display: inline-block;
-    text-decoration: none;
+    padding: 0px 15px;    
 }
 
 .menu-wrapper {
     margin-bottom: 26px;
 }
 
-.clearfix::after{
-    display: table;
-    content: "";
-    clear: both;
-}
-
 .nav-menu {
     margin: 0;
-    outline: green;
-    /*height: 34px;*/
-    /*width: 470px;*/
     float: right;
 }
 
@@ -98,10 +114,6 @@ footer {
     text-decoration: none;
 }
 
-/*.item a:nth-child(n+2) {
-    margin-right: 60px;
-}*/
-
 .item a:hover,
 .item a:focus {
     color:  #1abc9c;
@@ -124,66 +136,17 @@ footer {
     color:  #1abc9c;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hydden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .section2 {
     margin-bottom: 100px;
 }
 
-h3 {    
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 82px; 
-    text-align: left;
-}
-
-h2 {
-    margin: 0 auto 76px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.first-title::after {
+.first-title::after{
     margin: 18px auto 0;
     display: block;
     width: 164px;
     height: 7px;
     background-color:  #4ec6ab;
     content: "";
-}
-
-.second-title::after {
-    margin: 22px auto 0;
-    display: block;
-    width: 164px;
-    height: 7px;
-    background-color:  #4ec6ab;
-    content: "";
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;    
 }
 
 .features-list-item {
@@ -252,7 +215,12 @@ ul {
     text-align: center;
 }
 
-.features-list li:hover .features-list-name{
+.features-list li:hover .features-list-name,
+.slider-l:hover,
+.slider-l:focus,
+.slider-r:hover,
+.slider-r:focus {
+    opacity: 1;
     background-color: #1abc9c;
     transition: 0.3s;
 }
@@ -272,81 +240,11 @@ ul {
     cursor:pointer;
 }
 
-.lattest-news-wrapper {
-    padding-bottom: 80px;
-}
-
-.lattest-news-item {
-    width: 350px;
-    float: left;
-    margin-right: 30px;
-}
-
-.lattest-news-item:nth-child(3n+3) {
-    margin-right: 0;
-}
-
-
-
-.img-news {
-    margin-bottom: 10px;
-}
-
-.lattest-news-text {
-    margin: 0 0 30px ;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
-    text-align: left;
-}
-
-.lattest-news-text::after {
-    margin: 15px 0 0;
-    display: block;
-    width: 136px;
-    height: 3px;
-    background-color:  #4ec6ab;
-    content: "";
-}
-
-.lattest-news-text1 {
-    margin: 0 0 15px;
-    height: 66px;
-    overflow: hidden;
-    text-align: left;
-}
-
-li .link {
-    margin: 0;
-    padding: 13px 40px;
-    color:  #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-    display: inline-block;
-    background-color: #4ec6ab;
-    border-radius: 3px;
-    text-decoration: none;
-    text-transform: capitalize;
-    user-select: none;
-    outline: none;
-    transition: 0.3s;
-
-}
-
-.link:hover {
-    background-color: #187762;
-}
-
-.link:focus {
-    outline: 1px solid  rgb(0, 0, 173);
-}
-
 .slider {
-    /*z-index: -1;*/
     position: relative;
     height: 600px;
 }
+
 .slider-text {
     position: absolute;
     width: max-content;
@@ -355,7 +253,6 @@ li .link {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: #fff;
-    text-align: center;
 }
 
 .slider-text p {
@@ -364,8 +261,6 @@ li .link {
     font-size: 24px;
     font-weight: 300;
     line-height: 54px;
-    text-align: left;
-
 }
 
 .slider-l, .slider-r {
@@ -381,15 +276,6 @@ li .link {
     border: none; 
     top: 50%;
     transform: translateY(-50%);
-}
-
-.slider-l:hover,
-.slider-l:focus,
-.slider-r:hover,
-.slider-r:focus {
-    opacity: 1;
-    background-color: #1abc9c;
-    transition: 0.3s;
 }
 
 .slider-l {
@@ -411,15 +297,13 @@ li .link {
     background-position: center;
 }
 
-/*.list-icons a:nth-child(3n+3) {
-    margin-right: 0;
-}
-*/
-    
-.list-icons li:not(:nth-child(3n+3)) {
+.list-icons li:not(:nth-child(3n+4)) {
     margin-right:10px;
     margin-bottom: 8px;
-} 
+}
+.list-icons li:nth-child(n+3) {
+    margin-right: 0;
+}
 
 .list-icons a:hover,
 .list-icons a:focus,
@@ -444,7 +328,6 @@ li .link {
 .list-icons li {
     float:left;
 }
-
 
 .basket     {
     border: 1px solid #fff;
@@ -489,7 +372,25 @@ li .link {
     background-size: cover;
 }
 
-.footer-wrapper {
+footer {
+    height: 88px;
+    background-color: #323232;
     position: relative;
-    
+}
+
+.footer-text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.footer-text a {
+    color:  #1abc9c;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-wrapper {
+    position: relative;    
 }
