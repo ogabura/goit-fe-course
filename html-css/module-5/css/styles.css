@@ -43,7 +43,7 @@ ul {
     list-style-type: none;    
 }
 
-h3 {    
+.slider-text-p {    
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
@@ -62,19 +62,14 @@ h2 {
     text-align: center;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.basket img {
+    display: inline-block;
+    vertical-align: middle;    
 }
 
-.backgroundcolor {
-    background-color: #e9f0fd;
-}
-
-.wrapper {
-    margin: 0 0;
-    padding: 32px 0 0;
+#menu {
+    margin-top: 32px;
+    margin-bottom: 26px;
 }
 
 .container {
@@ -84,9 +79,6 @@ img {
     padding: 0px 15px;    
 }
 
-.menu-wrapper {
-    margin-bottom: 26px;
-}
 
 .nav-menu {
     margin: 0;
@@ -98,17 +90,13 @@ img {
     right:50%;
 }
 
-.nav-menu li:not(:first-child) {
-    margin-right: 30px;
-}
-
 .item a {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     text-align: right;
     display: block;
-    padding: 5px 15px;
+    padding: 5px 16px;
     color:  #555252;
     text-transform: uppercase;
     text-decoration: none;
@@ -136,8 +124,10 @@ img {
     color:  #1abc9c;
 }
 
-.section2 {
-    margin-bottom: 100px;
+.features {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background-color: #e9f0fd;
 }
 
 .first-title::after{
@@ -240,7 +230,7 @@ img {
     cursor:pointer;
 }
 
-.slider {
+.slider-title {
     position: relative;
     height: 600px;
 }
@@ -255,7 +245,7 @@ img {
     color: #fff;
 }
 
-.slider-text p {
+.slider-text-p1 {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -290,6 +280,7 @@ img {
 
 .list-icons a {
     display: block;
+    padding: 5px;
     width: 48px;
     height: 48px;
     border: 1px solid #fff; 
@@ -345,34 +336,17 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     cursor:pointer;
-    display: inline-block;
-    padding: 7px;
+    display: block;
 }
 
-.basket::before {
-    content: "";  
-    text-align: center; 
-    color: #fff;  
-    float: left;  
-    position: relative;  
-    top: 4px;
-    left: 10px;  
-    background-repeat: no-repeat;  
-    display: block;  
-    height: 30px;  
-    width: 38px;  
-    background-image: url(../img/basket.png);
-}
-
-.section1 {
+.slider {
     height: 600px;
     width: 100%;
-    margin-bottom: 90px;
     background: url(../img/slide4.png) no-repeat center;
     background-size: cover;
 }
 
-footer {
+.footer-wrapper {
     height: 88px;
     background-color: #323232;
     position: relative;
@@ -389,8 +363,4 @@ footer {
     color:  #1abc9c;
     display: inline-block;
     text-decoration: none;
-}
-
-.footer-wrapper {
-    position: relative;    
 }
