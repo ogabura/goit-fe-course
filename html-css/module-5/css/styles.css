@@ -67,11 +67,6 @@ h2 {
     vertical-align: middle;    
 }
 
-#menu {
-    margin-top: 32px;
-    margin-bottom: 26px;
-}
-
 .container {
     position: relative;
     width: 1140px;
@@ -79,6 +74,10 @@ h2 {
     padding: 0px 15px;    
 }
 
+.menu-wrapper {
+    padding-top: 32px;
+    padding-bottom: 26px;
+}
 
 .nav-menu {
     margin: 0;
@@ -86,7 +85,7 @@ h2 {
 }
 
 .nav-menu li {
-    float: right;
+    float: left;
     right:50%;
 }
 
@@ -161,25 +160,6 @@ h2 {
     z-index: 1;
 }
 
-.wrapper-icons {
-    z-index: 1;
-    width: 236px;
-    height: 260px;
-    background-color: rgba(0,0,0,0.5);
-    opacity: 0;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.icons {
-    z-index: 2;
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .features-list-name,
 .features-list-price {
@@ -221,7 +201,7 @@ h2 {
 }
 
 .features-list li:hover .wrapper-icons,
-.features-list li:hover .icons {
+.features-list li:hover .list-icons {
     transition: 0.3s;
     opacity: 1;
 }
@@ -277,6 +257,29 @@ h2 {
     right: 15px;
     background:url(../img/next.png) #4ec6ab 50% no-repeat;
 }
+
+.wrapper-icons {
+    z-index: 1;
+    width: 255px;
+    height: 284px;
+    background-color: rgba(0,0,0,0.5);
+    border: 10px solid rgba(255, 255, 255, 0.678);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.list-icons {
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .list-icons a {
     display: block;
@@ -337,6 +340,8 @@ h2 {
     text-decoration: none;
     cursor:pointer;
     display: block;
+    background-image: url(../img/basket.png) no-repeat, url(../img/add_to_cart.png) no-repeat;
+
 }
 
 .slider {
@@ -347,16 +352,14 @@ h2 {
 }
 
 .footer-wrapper {
-    height: 88px;
     background-color: #323232;
     position: relative;
 }
 
 .footer-text {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, 50%);
+    margin: 0;
+    text-align: center;
+    padding: 36px 0;
 }
 
 .footer-text a {
