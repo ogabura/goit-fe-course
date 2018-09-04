@@ -288,7 +288,6 @@ h2 {
     height: 48px;
     border: 1px solid #fff; 
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .list-icons li:not(:nth-child(3n+4)) {
@@ -309,14 +308,17 @@ h2 {
 
 .icon-heart {
     background-image: url(../img/heart.png);
+    background-position: center;
 }
 
 .icon-arrows {
     background-image: url(../img/arrows.png);
+    background-position: center;
 }
 
 .icon-clock {
     background-image: url(../img/clock.png);
+    background-position: center;
 }
 
 .list-icons li {
@@ -340,8 +342,7 @@ h2 {
     text-decoration: none;
     cursor:pointer;
     display: block;
-    background-image: url(../img/basket.png) no-repeat, url(../img/add_to_cart.png) no-repeat;
-
+    background: url(../img/basket.png) no-repeat 15% 50%, url(../img/add_to_cart.png) no-repeat 75% 50%;
 }
 
 .slider {
