@@ -27,11 +27,11 @@ body {
     line-height: 24px;    
 }
 
-/*.clearfix::after{
+.clearfix::after{
     display: table;
     content: "";
     clear: both;
-}*/
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -117,7 +117,7 @@ ul {
 .menu-item a:hover,
 .menu-item a:focus {
     color:  #f38181;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .menu-item a:hover:after,
@@ -133,7 +133,7 @@ ul {
     width: 0%;
     left:50%;
     position:absolute;
-    transition: width .3s ease-in-out;
+    transition: width 0.5s ease-in-out;
     transform: translateX(-50%);
 }
 
@@ -233,10 +233,41 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.members-item {
+/*.members-item {
     cursor: pointer;
-}
+}*/
 
+/*.members-item:hover .mask::after {
+    opacity: 1;
+    box-shadow: 10px 10px  red;
+}*/
+/*.test {
+    position: relative;
+    width: 380px;
+    height: 470px;
+}*/
+.img-wrapper {
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    cursor: pointer;
+    position: relative;
+}
+.member-photo {
+    margin: 0 auto;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    /*background-image: url(../img/Rectangle.png) no-repeat;*/
+}
+/*.member-photo:hover {
+    -o-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }*/
 /*.members li {
     flex-basis: 30%;
 }*/
@@ -253,8 +284,12 @@ ul {
 
 .socials-icons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
 .socials-icons a {
     display: block;
@@ -278,3 +313,55 @@ ul {
 .icon-instagram {    
     background: rgb(252, 227, 138) url(../img/instagram.png) 50% 50% no-repeat;
 }
+
+/*.mask {
+    background: url(../img/Layer\ 16.png) no-repeat 0 0 transparent;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+    width: 380px;
+}*/
+
+/*.mask::after*/
+.img-wrapper::after {
+    /*background: transparent;*/
+    /*background: -moz-linear-gradient(top, rgba(255, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+    background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);*/
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    content: "";
+    display: block;
+    width: 380px;
+    height: 470px;
+    left: 0;
+    position: absolute;
+    top: 0;   
+    opacity: 0;
+    transition: 0.8s;
+
+    
+    
+}
+.test:hover .socials-icons {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+    transition: 1s;
+    z-index: 1;
+}
+.test:hover .img-wrapper::after, .test:hover .member-photo
+/*.test:hover .socials-icons*/
+ {
+    opacity: 1;
+    -o-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -moz-transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+}
+/*
+.test:hover .socials-icons {
+    opacity: 1;
+    z-index: 1;
+}*/
