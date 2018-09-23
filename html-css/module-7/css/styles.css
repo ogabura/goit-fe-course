@@ -262,6 +262,18 @@ input {
     width: 455px;
     height: 50px;
 }
+input:valid {
+    outline-color: #00800b;
+}
+input:invalid {
+    outline-color: #c40505;
+}
+textarea:valid {
+    outline-color: #00800b;
+}
+textarea:invalid {
+    outline-color: #c40505;
+}
 textarea {
     padding-top: 16px;
     padding-left: 20px;
