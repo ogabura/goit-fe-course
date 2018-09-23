@@ -58,8 +58,20 @@
         </ul>
     </div>    
 </main>
-<footer class="1container footer-wrapper">
-        <p class="item-title">Web Security</p>
+<footer class="footer-wrapper">
+    <section class="container">
+    <div class="main-text">
+        <p class="footer-text-p">Contact us</p>
+        <p class="main-text-p1">Proin iaculis purus condsequat sem cure.</p>
+    </div>
+    <form class="form-text-style" method="POST" id="user_request">
+        <input type="name" name="customer-name" placeholder="Your name *" id="name" required>
+        <input type="email" name="customer-email" placeholder="Your e-mail *" id="email" required>
+        <input type="text" name="customer-subject" placeholder="Subject" id="sabject" >
+        <textarea name="customer-message" placeholder="Your message *" required wrap="soft" form="user_request"></textarea>
+    </form>
+    <button>Send Message</button>
+</section>
 </footer>
 </body>
 </html>
