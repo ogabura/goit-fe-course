@@ -250,18 +250,15 @@ input {
     width: 455px;
     height: 50px;
 }
-input:valid {
-    outline-color: #00800b;
-}
-input:invalid {
-    outline-color: #c40505;
-}
+input:valid,
 textarea:valid {
     outline-color: #00800b;
 }
+input:invalid,
 textarea:invalid {
     outline-color: #c40505;
 }
+
 textarea {
     padding-top: 16px;
     padding-left: 20px;
@@ -296,7 +293,8 @@ button {
     border-radius: 3px;
     background-color:  #fed136;    
 } 
-button:hover {
+button:hover,
+button:focus {
     background: rgba(158, 155, 155, 0.2);
     color: #03a9f4;
     cursor: pointer;
