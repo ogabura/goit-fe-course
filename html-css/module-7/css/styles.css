@@ -109,13 +109,11 @@ ul {
 /*Main menu end*/
 
 /*Main section Start*/
-.main-text {
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;*/
+.header-text,
+.footer-text {
     margin-bottom: 74px;
 }
-.main-text>h2 {    
+.header-text>h2 {    
     margin: 0 auto 19px;   
     padding: 0; 
     font-family: Montserrat;
@@ -126,7 +124,8 @@ ul {
     text-align: center; 
     text-transform: uppercase;
 }
-.main-text>p {
+.header-text>p,
+.footer-text>p{
     margin: 0 auto;
     padding: 0;
     font-family: DroidSerif, 'Ubuntu', sans-serif;
@@ -168,7 +167,7 @@ ul {
     display: block;
     text-align: center;
 }
-.item-icon-basket:before {
+.item-subcontent li::before {
     margin: 0 auto 22px;
     display: block;
     content: "";
@@ -176,26 +175,14 @@ ul {
     width: 68px;
     border: 3px solid #fed136;
     border-radius: 50px;
+}
+.item-icon-basket::before {    
     background: url(../img/icon-basket.png) 50% 50% no-repeat;
 }
-.item-icon-laptop:before {
-    margin: 0 auto 22px;
-    display: block;
-    content: "";
-    height: 68px;
-    width: 68px;
-    border: 3px solid #fed136;
-    border-radius: 50px;
+.item-icon-laptop::before {
     background: url(../img/icon-laptop.png) 50% 50% no-repeat;
 }
-.item-icon-locked:before {
-    margin: 0 auto 22px;
-    display: block;
-    content: "";
-    height: 68px;
-    width: 68px;
-    border: 3px solid #fed136;
-    border-radius: 50px;
+.item-icon-locked::before {
     background: url(../img/icon-locked.png) 50% 50% no-repeat;
 }
 .item-title {
@@ -219,7 +206,7 @@ ul {
 
 
 /*Footer Section Start*/
-.footer-text-p {    
+.footer-text>h3 {    
     margin: 0 auto 19px;   
     padding: 0; 
     font-family: Montserrat;
