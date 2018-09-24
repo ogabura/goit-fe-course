@@ -165,6 +165,15 @@ ul {
     margin-bottom: 98px;
     position: relative;
 }
+.item-content::before {    
+    top: 0;
+    left: 30px;
+    display: block;
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+}
 .item-content li {
     padding: 0 15px;
 }
@@ -187,64 +196,23 @@ ul {
     font-weight: 400;
     text-align: left;
 }
+
 .item-title-alarm::before {
-    top: 0;
-    left: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 32px;
     background: url(../img/ALARM.png) 50% 50% no-repeat;
 }
 .item-title-linegraph::before {
-    top: 0;
-    left: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 32px;
     background: url(../img/LINEGRAPH.png) 50% 50% no-repeat;
 }
 .item-title-computer::before {
-    top: 0;
-    left: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 32px;
     background: url(../img/COMPUTER_OK.png) 50% 50% no-repeat;
 }
 .item-title-book::before {
-    top: 0;
-    left: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 32px;
     background: url(../img/BOOK2.png) 50% 50% no-repeat;
 }
 .item-title-home::before {
-    top: 0;
-    left: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 32px;
     background: url(../img/HOME.png) 50% 50% no-repeat;
 }
 .item-title-image::before {
-    top: 0;
-    left: 30px;
-    display: block;
-    position: absolute;
-    content: "";
-    height: 32px;
-    width: 32px;
     background: url(../img/IMAGE.png) 50% 50% no-repeat;
 }
 .item-text {
