@@ -34,11 +34,11 @@ ul {
     list-style-type: none;    
 }
 .container {
-    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 5px; 
 }
+
 /*Global Styles End*/
 
 /*Main menu start*/
@@ -109,6 +109,9 @@ ul {
 /*Main menu end*/
 
 /*Main section Start*/
+.section {
+    padding-bottom: 92px;
+}
 .header-title {
     margin-bottom: 43px;
 }
@@ -120,7 +123,7 @@ ul {
     text-align: center;
     color: #333333;
 }
-.header-title>p {
+.header-subjection {
     margin: 0 auto;
     color:  #333333;
     font-family: 'Montserrat', sans-serif;
@@ -129,15 +132,17 @@ ul {
     text-align: center;
     text-transform: uppercase;
 }
-.header-title::after {
-    margin: 43px auto 0;
+.header-subjection::after {
+    margin: 0 auto;
+    margin-top: 42px;
     display: block;
     background-color:  #f38181;
     width: 60px;
     height: 3px;
     content: "";
 }
-p .header-description {
+.header-description {
+    margin: 46px auto 92px;
     font-family: Roboto;
     color: #999999;
     font-size: 15px;
@@ -145,6 +150,7 @@ p .header-description {
     line-height: 24px;
     text-align: center;
     margin-bottom: 92px;
+    max-width: 940px;
 }
 .item-list {
     display: flex;
