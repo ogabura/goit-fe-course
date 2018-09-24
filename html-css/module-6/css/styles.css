@@ -42,11 +42,13 @@ ul {
 /*Global Styles End*/
 
 /*Main menu start*/
+.page-header {
+    margin-bottom: 112px;
+}
 .menu-wrapper {
     display: flex;
+    min-height: 65px;
     flex-wrap: wrap;
-    padding-top: 27px;
-    padding-bottom: 123px;
     justify-content: space-between;
     align-items: center;
 }
@@ -58,7 +60,7 @@ ul {
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;  
 }
 .logo {
     display: block;
@@ -81,7 +83,8 @@ ul {
     display: block;
     padding: 5px 16px;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: none;    
+    position: relative;  
 }
 .menu-item a:hover,
 .menu-item a:focus {
@@ -90,7 +93,7 @@ ul {
 }
 .menu-item a:hover:after,
 .menu-item a:focus:after {
-    width: 100%;
+    width: 70%;
 }
 .menu-item a:after {
     background-color: #f38181;
@@ -107,11 +110,9 @@ ul {
 
 /*Main section Start*/
 .main-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
+    margin-bottom: 43px;
 }
-.main-text-p {    
+.main-text>h3 {    
     margin: 0 auto 26px;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -119,7 +120,7 @@ ul {
     text-align: center;
     color: #333333;
 }
-.main-text-p1 {
+.main-text>p {
     margin: 0 auto;
     color:  #333333;
     font-family: 'Montserrat', sans-serif;
@@ -129,7 +130,7 @@ ul {
     text-transform: uppercase;
 }
 .main-text::after {
-    margin: 43px auto;
+    margin: 43px auto 0;
     display: block;
     background-color:  #f38181;
     width: 60px;

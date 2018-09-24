@@ -63,11 +63,12 @@ ul {
 /*Global Styles End*/
 
 /*Main menu start*/
+.page-header {
+    margin-bottom: 112px;
+}
 .menu-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 27px;
-    padding-bottom: 110px;
     justify-content: space-between;
     align-items: center;
 }
@@ -109,12 +110,12 @@ ul {
 
 /*Main section Start*/
 .main-text {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
+    flex-wrap:wrap;*/
     margin-bottom: 74px;
 }
-.main-text-p {    
+.main-text>h2 {    
     margin: 0 auto 19px;   
     padding: 0; 
     font-family: Montserrat;
@@ -125,7 +126,7 @@ ul {
     text-align: center; 
     text-transform: uppercase;
 }
-.main-text-p1 {
+.main-text>p {
     margin: 0 auto;
     padding: 0;
     font-family: DroidSerif, 'Ubuntu', sans-serif;
