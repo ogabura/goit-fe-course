@@ -109,10 +109,10 @@ ul {
 /*Main menu end*/
 
 /*Main section Start*/
-.main-text {
+.header-title {
     margin-bottom: 43px;
 }
-.main-text>h3 {    
+.header-title>h2 {    
     margin: 0 auto 26px;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -120,7 +120,7 @@ ul {
     text-align: center;
     color: #333333;
 }
-.main-text>p {
+.header-title>p {
     margin: 0 auto;
     color:  #333333;
     font-family: 'Montserrat', sans-serif;
@@ -129,7 +129,7 @@ ul {
     text-align: center;
     text-transform: uppercase;
 }
-.main-text::after {
+.header-title::after {
     margin: 43px auto 0;
     display: block;
     background-color:  #f38181;
@@ -137,7 +137,13 @@ ul {
     height: 3px;
     content: "";
 }
-.section-item {
+p .header-description {
+    font-family: Roboto;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
     margin-bottom: 92px;
 }
 .item-list {
@@ -235,8 +241,6 @@ ul {
     width: 32px;
     background: url(../img/IMAGE.png) 50% 50% no-repeat;
 }
-
-
 .item-text {
     margin: 0;
     font-family: Roboto;
@@ -249,13 +253,7 @@ ul {
 /*Main section End*/
 
 /*Members Cards Start*/
-.card-container {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-    text-align: center;
-    margin-bottom: 92px;
-}
+
 .members {
     display: flex;
     flex-direction: row;
@@ -271,16 +269,6 @@ ul {
 
 .member-photo {
     margin: 0 auto;
-}
-.card-container p {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-    color:  #999999;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
 }
 .member-list-item {
     position: relative;
