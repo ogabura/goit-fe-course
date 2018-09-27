@@ -107,8 +107,7 @@ ul {
 /*Main menu end*/
 
 /*Main section Start*/
-.header-text,
-.footer-text {
+.header-text {
     margin-bottom: 50px;
 }
 .header-text>h2 {    
@@ -118,12 +117,10 @@ ul {
     color:  #222222;
     font-size: 40px;
     font-weight: 700;
-    /*line-height: 75px;*/
     text-align: center; 
     text-transform: uppercase;
 }
-.header-text>p,
-.footer-text>p{
+.header-text>p {
     margin: 0 auto;
     padding: 0;
     font-family: 'DroidSerif', 'Ubuntu', sans-serif;
@@ -195,11 +192,10 @@ ul {
     color:  #ffffff;
     font-size: 40px;
     font-weight: 700;
-    /*line-height: 75px;*/
     text-align: center; 
     text-transform: uppercase;
 }
-.main-footer-wrapper {    
+.main-footer-wrapper {
     max-width: 100%;
     height: 676px;
     padding-top: 110px;
@@ -208,19 +204,15 @@ ul {
 }
 .form-text-style {
     margin-bottom: 31px;
-    height: 210px;
     max-width: 940px;
     font-family: 'Montserrat', sans-serif;
     color:  #bbbbbb;
     font-size: 14px;
     font-weight: 700;
-    text-align: left;    
-    vertical-align: top;
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: space-between;
-    align-content:space-between;
 }
 input {
     padding-left: 20px;
@@ -232,12 +224,12 @@ input {
     width: 455px;
     height: 50px;
 }
-input:valid,
-textarea:valid {
+input[required]:valid,
+textarea[required]:valid {
     outline-color: #00800b;
 }
-input:invalid,
-textarea:invalid {
+input[required]:invalid,
+textarea[required]:invalid {
     outline-color: #c40505;
 }
 
@@ -253,18 +245,24 @@ textarea {
     height: 210px;
     resize: none;
     border-radius: 2px;
+    
+}
+.form-input-items {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 210px;
+    justify-content: space-between;
 }
 button {
-    flex-basis: 100%;
     width: 240px;
     height: 66px;
     margin: 0 auto;
+    margin-top: 31px;
     display: block;
     font-family: 'Montserrat', sans-serif;
     color:  #ffffff;
     font-size: 18px;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     user-select: none;
@@ -272,7 +270,6 @@ button {
     outline: none;
     border-radius: 1px;
     transition: 0.2s;
-    line-height: 60px;
     border-radius: 3px;
     background-color:  #fed136;    
 } 
