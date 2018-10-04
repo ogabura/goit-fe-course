@@ -188,7 +188,7 @@ ul {
 
 
 /*Footer Section Start*/
-.main-footer-wrapper>h2 {
+.main-footer-wrapper>.header-text>h2 {
     color:  #ffffff;
     font-size: 40px;
     font-weight: 700;
