@@ -188,7 +188,7 @@ ul {
 
 
 /*Footer Section Start*/
-.main-footer-wrapper>.header-text>h2 {
+.main-footer-wrapper>h2 {
     color:  #ffffff;
     font-size: 40px;
     font-weight: 700;
@@ -203,7 +203,6 @@ ul {
     background-color:  #222222;
 }
 .form-text-style {
-    margin-bottom: 31px;
     max-width: 940px;
     font-family: 'Montserrat', sans-serif;
     color:  #bbbbbb;
