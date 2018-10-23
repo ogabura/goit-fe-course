@@ -137,7 +137,8 @@ h1,h2,h3,h4,p {
     margin-top: 0;
     margin-bottom: 17px;
 }
-.section-button {
+.section-button {    
+    margin: 0 auto;
     width: 280px;
     height: 40px;
     padding: 8px;
@@ -149,7 +150,7 @@ h1,h2,h3,h4,p {
 }
 .section-button:hover {
     color: #ff4e50;
-    padding: 8px;
+    padding: 6px;
     border: solid 2px #ff4e50;
     background-color: #ffffff;
     cursor: pointer;
@@ -240,4 +241,72 @@ h1,h2,h3,h4,p {
     text-align: center;
     padding: 0 30px 30px;
     line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 680px;
+    }
+    .page-header {
+        min-height: 698px; 
+    }
+    .nav-menu {
+        margin-bottom: 0;
+    }
+    .menu-wrapper {
+        width: 672px;
+        padding-top: 38px;
+        margin-bottom: 140px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .logo {
+        padding-top: 8px;
+    }
+    .header-title {
+        font-size: 52px;
+        line-height: 62px;
+        width: 532px;
+        margin: 0 auto 30px;
+    }
+    .header-text {
+        font-weight: 300;
+        font-size: 24px;
+        margin-bottom: 34px;
+    }
+    .section-button {
+        width: 226px;
+    }
+    .button-inverse {
+        width: 198px;
+    }
+    .main-section {
+        padding-top: 66px;
+        width: 532px;
+        min-height: 736px;
+    }
+    .main-title {
+        margin-bottom: 30px;
+    }
+    .member-list-item {
+        width: 236px;
+        padding-bottom: 57px;
+    }
+    .member-list-item:nth-child(2n) {
+        order: 1;
+        padding-bottom: 10px;
+    }
+    /*.member-list-item:nth-last-child(-n+2){
+        
+    }*/
+    .member-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 35px;
+    }
+    .member-list-description {
+        padding: 0;
+    }
 }
