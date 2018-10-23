@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
 /*Global Styles Start*/
 html {
 	box-sizing:border-box;
@@ -24,7 +24,7 @@ ul {
     /*max-width: 940px;*/
     width: 320px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0 15px;
     text-align: center;
 }
 .clearfix::after {
@@ -50,6 +50,9 @@ a {
     display: block;
     text-decoration: none;
 }
+h1,h2,h3,h4,p {
+    margin: 0;
+}
 /*Global Styles End*/
 
 .nav-menu {
@@ -59,25 +62,26 @@ a {
 }
 
 .logo {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color:  #ffffff;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;    
 }
 
 .page-header {
-    min-height: 540px;    
-    margin-bottom: 70px;
-    /*width: 320px;*/
-    background: url(../img/bg-img.png) no-repeat;
+    min-height: 540px; 
+    background: url(../img/bg-img_big.png) no-repeat  #1a1915;
+    /*background-color: #1a1915;*/
+    background-size: cover;
+    background-position: center;
 }
 
 .menu-item {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color:  #ffffff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 .menu-item a:hover,
@@ -92,10 +96,10 @@ a {
     width: 90px;
     height: 36px;
     padding: 7px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color:  #ffffff;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
     border: none;
@@ -109,11 +113,11 @@ a {
     text-align: center;
 }
 .header-title {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color:  #ffffff;
     font-size: 30px;
     line-height: 36px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 14px;
@@ -121,11 +125,11 @@ a {
 }
 
 .header-text {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color:  #ffffff;
     font-size: 18px;
     font-weight: 300;
-    padding: 0 50px;
+    padding: 0 30px;
     margin-top: 0;
     margin-bottom: 17px;
 }
@@ -162,15 +166,17 @@ a {
     color: #ffffff;
     cursor: pointer;
 }
-.main-section {
+.main-section {    
+    padding-top: 70px;
     min-height: 1179px;
 }
 .main-title {
-    font-family: Montserrat;
-color:  #333333;
-font-size: 22px;
-font-weight: 700;
-text-align: center;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 15px;
+    color:  #333333;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
 }
 .member-list {
     margin: 0 auto;
@@ -215,18 +221,18 @@ text-align: center;
     background-color: #4e73db;
 }
 .member-list-name {
-    font-family: Montserrat;
-color:  #333333;
-font-size: 14px;
-font-weight: 700;
-text-align: center;
+    font-family: Montserrat, sans-serif;
+    color:  #333333;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
 }
 .member-list-description {
-    font-family: Roboto;
-color:  #666666;
-font-size: 14px;
-font-weight: 300;
-text-align: center;
-padding: 0 51px;
-line-height: 16px;
+    font-family: Roboto, sans-serif;
+    color:  #666666;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 51px;
+    line-height: 16px;
 }
