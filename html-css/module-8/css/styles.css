@@ -50,6 +50,11 @@ a {
     display: block;
     text-decoration: none;
 }
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
 h1,h2,h3,h4,p {
     margin: 0;
 }
@@ -72,7 +77,6 @@ h1,h2,h3,h4,p {
 .page-header {
     min-height: 540px; 
     background: url(../img/bg-img_big.png) no-repeat  #1a1915;
-    /*background-color: #1a1915;*/
     background-size: cover;
     background-position: center;
 }
@@ -136,7 +140,7 @@ h1,h2,h3,h4,p {
 .section-button {
     width: 280px;
     height: 40px;
-    padding: 0px;
+    padding: 8px;
     border: none;
     border-radius: 20px;
     background-color: #ff4e50;
@@ -145,6 +149,7 @@ h1,h2,h3,h4,p {
 }
 .section-button:hover {
     color: #ff4e50;
+    padding: 8px;
     border: solid 2px #ff4e50;
     background-color: #ffffff;
     cursor: pointer;
@@ -169,7 +174,7 @@ h1,h2,h3,h4,p {
 .main-section {    
     padding-top: 70px;
     min-height: 1179px;
-}
+}   
 .main-title {
     font-family: Montserrat, sans-serif;
     margin-bottom: 15px;
@@ -178,18 +183,17 @@ h1,h2,h3,h4,p {
     font-weight: 700;
     text-align: center;
 }
-.member-list {
-    margin: 0 auto;
-}
 .member-list-photo>img {    
     border-radius: 50%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 .member-list-photo {
     position: relative;
     width: 121px;
     height: 121px;
+    margin: 0 auto 15px;
 }
+
 .member-list-photo:after {
     position: absolute;
     bottom: 0;
@@ -226,6 +230,7 @@ h1,h2,h3,h4,p {
     font-size: 14px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 10px;
 }
 .member-list-description {
     font-family: Roboto, sans-serif;
@@ -233,6 +238,6 @@ h1,h2,h3,h4,p {
     font-size: 14px;
     font-weight: 300;
     text-align: center;
-    padding: 0 51px;
+    padding: 0 30px 30px;
     line-height: 16px;
 }
