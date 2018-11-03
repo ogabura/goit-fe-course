@@ -1,0 +1,38 @@
+{
+  "name": "module-9",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "browser-sync build -w",
+    "lint": "stylelint src/css",
+    "prefixer": "postcss src/css/*.css --use autoprefixer -d build/css",
+    "minify": "postcss src/css/*.css --use cssnano -d build/css",
+    "css:build": "postcss src/css/*.css --use autoprefixer --use cssnano -d build/css",
+    "clean:build": "rimraf build && mkdir build",
+    "html:minifier": "html-minifier --file-ext html --input-dir src --output-dir build --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
+    "html:build": "npm run html:minifier",
+    "images:build": "imagemin src/img/* -o=build/img",
+    "build": "npm run clean:build && npm run images:build && npm run css:build && npm run html:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ogabura/goit-fe-course/tree/master/html-css/module-9"
+  },
+  "author": "Gabura Aleksander",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
+    "cpx": "^1.5.0",
+    "cssnano": "^4.1.7",
+    "html-minifier": "^3.5.21",
+    "imagemin-cli": "^3.0.0",
+    "postcss-cli": "^6.0.1",
+    "rimraf": "^2.6.2",
+    "stylelint": "^9.7.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "devDependencies": {}
+}
