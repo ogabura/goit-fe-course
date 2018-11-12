@@ -14,12 +14,13 @@
     "html:minifier": "html-minifier --file-ext html --input-dir src --output-dir build --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
     "html:build": "npm run html:minifier",
     "images:build": "imagemin src/img/* -o=build/img",
-    "svgo:build": "rimraf build/img/icons & mkdir build/img/icons & svgo -f src/img/icons -o build/img/icons --pretty",
-    "build": "npm run clean:build && npm run images:build && npm run svgo:build && npm run css:build && npm run html:build"
+    "presvgo": "cd build && mkdir img && cd img && mkdir icons",
+    "svgo:build": "svgo -f src/img/icons -o build/img/icons --pretty",
+    "build": "npm run clean:build && npm run presvgo && npm run images:build  && npm run svgo:build && npm run css:build && npm run html:build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ogabura/goit-fe-course/tree/master/html-css/module-9"
+    "url": "https://github.com/ogabura/goit-fe-course/tree/master/html-css/module-10"
   },
   "author": "Gabura Aleksander",
   "license": "ISC",
