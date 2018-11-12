@@ -14,7 +14,7 @@
     "html:minifier": "html-minifier --file-ext html --input-dir src --output-dir build --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
     "html:build": "npm run html:minifier",
     "images:build": "imagemin src/img/* -o=build/img",
-    "rebuild": "npm run lint",
+    /* "rebuild": "npm run lint",*/
     "build": "npm run clean:build && npm run images:build && npm run css:build && npm run html:build"
   },
   "repository": {

@@ -164,7 +164,6 @@ ul {
   visibility: hidden;
 }
 
-
 .menu__header {
   margin: 0 auto;
   margin-top: 142px;
@@ -184,7 +183,7 @@ ul {
 
 .menu__header--subjection {
   margin: 0 auto;
-  margin-top: 38px;  
+  margin-top: 38px;
   margin-bottom: 110px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -195,26 +194,25 @@ ul {
   line-height: 140px;
 }
 
-
 .menu--button {
   border-style: solid;
-border-width: 3px;
-border-color:  #ffffff;
-box-sizing: border-box;
-background-color:  rgba(0, 0, 0, 0);
-width: 160px;
-height: 40px;
-font-family: Montserrat;
-color:  #fff;
-font-size: 14px;
-font-weight: 700;
-text-align: center;
-text-transform: uppercase;
+  border-width: 3px;
+  border-color: #fff;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  width: 160px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .menu--button:hover {
   background-color: #f38181;
-  color:  #fff;
+  color: #fff;
 }
 
 /* Main menu end */
@@ -404,17 +402,12 @@ text-transform: uppercase;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  /*margin: 0 auto;*/
-  
 }
 
 .member-list-socials a {
   width: 56px;
   height: 56px;
   border: rgba(243, 129, 129, 0.502) solid 1px;
-  /*text-align: center;
-  line-height: 70px;
-  vertical-align: middle;*/
   background-color: rgb(252, 227, 138);
   fill: #f38181;
   display: flex;
@@ -432,10 +425,7 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*padding: 15px 14px;*/
 }
-
 
 /* Member List Social Icons End */
 

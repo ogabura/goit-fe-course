@@ -14,8 +14,8 @@
     "html:minifier": "html-minifier --file-ext html --input-dir src --output-dir build --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
     "html:build": "npm run html:minifier",
     "images:build": "imagemin src/img/* -o=build/img",
-    "prebuild": "npm run lint",
-    "build": "npm run clean:build && npm run images:build && npm run css:build && npm run html:build"
+    "svgo:build": "rimraf build/img/icons & mkdir build/img/icons & svgo -f src/img/icons -o build/img/icons --pretty",
+    "build": "npm run clean:build && npm run images:build && npm run svgo:build && npm run css:build && npm run html:build"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,6 @@
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-pug": "^4.0.1",
-    "stylelint-config-recommended": "^2.1.0",
-    "svgo": "^1.1.1"
+    "stylelint-config-recommended": "^2.1.0"
   }
 }
