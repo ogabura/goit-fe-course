@@ -1,0 +1,85 @@
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hydden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.member-list-item {
+    position: relative;
+    display: flex;
+    width: 380px;
+}
+
+
+.member-list-overlay {
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 380px;
+    height: 470px;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    opacity: 0;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+}
+.member-list-socials {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.member-list-socials a {
+    display: block;
+    width: 56px;
+    height: 56px;
+    border: rgba(243, 129, 129, 0.502) solid 1px;
+} 
+.member-list-socials a:hover,
+.member-list-socials a:focus {
+    background-color:  #95e1d3;
+} 
+.member-list-socialas-facebook {    
+    background: rgb(252, 227, 138) url(../img/facebook.png) 50% 50% no-repeat;
+}
+.member-list-socialas-twitter {    
+    background: rgb(252, 227, 138) url(../img/twitter.png) 50% 50% no-repeat;
+}
+.member-list-socialas-pinterest {    
+    background: rgb(252, 227, 138) url(../img/pinterest.png) 50% 50% no-repeat;
+}
+.member-list-socialas-instagram {    
+    background: rgb(252, 227, 138) url(../img/instagram.png) 50% 50% no-repeat;
+}
+
+.member-list-image {
+    transition: transform 0.2s linear;
+}
+.member-list-item:hover .member-list-overlay {
+    opacity: 1;
+}
+.member-list-item:hover {
+    cursor: pointer;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
+}
+.member-list-item:hover .member-list-socials {
+    opacity: 1;
+}
