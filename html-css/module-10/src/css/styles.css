@@ -210,9 +210,11 @@ ul {
   text-transform: uppercase;
 }
 
-.menu--button:hover {
+.menu--button:hover,
+.menu--button:focus {
   background-color: #f38181;
   color: #fff;
+  outline: none;
 }
 
 /* Main menu end */
