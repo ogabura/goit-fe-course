@@ -1,67 +1,44 @@
-html
-body
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden
-ul
-.container
-.page-header
-.page-header::after
-.header-container
-.menu-wrapper
-.nav-menu
-.logo
-.logo span
-.menu-item a
-.menu-item a:hover,
-.menu-item a:focus
-.menu-item a::after
-.menu-item a:hover::after,
-.menu-item a:focus::after
-.section
-.header-title
-.header-title > h2
-.header-subjection
-.header-subjection::after
-.header-description
-.item-list
-.item-content
-.item-content::before
-.item-content li
-.item-content:nth-last-child(-n+3)
-.item-subcontent
-.item-title 
-.item-title-alarm::before 
-.item-title-linegraph::before
-.item-title-computer::before
-.item-title-book::before
-.item-title-home::before
-.item-title-image::before
-.item-text
-.members
-.member-list
-.member-photo
-.member-list-item
-.member-list-overlay
-.member-list-socials
-.member-list-socials a 
-.member-list-socials a:hover,
-.member-list-socials a:focus
-.member-list-socials-facebook 
-.member-list-socials-twitter
-.member-list-socials-pinterest
-.member-list-socials-instagram
-.member-list-item:hover .member-list-overlay,
-.member-list-item:hover .member-list-socials
-.member-list-item:hover
-.members-list-descr
-.members-list-descr-name
-.members-list-descr-position
-.footer-wrapper
-.footer-wrapper-text
-.footer-wrapper-text a 
-.footer-wrapper-form
-.footer-wrapper-email
-.footer-wrapper-subscribe-button
-.footer-wrapper-subscribe-button:hover,
-.footer-wrapper-subscribe-button:focus
+page__header
+container
+header__container
+
+nav__wrapper
+	logo
+	logo-uppercase
+	nav__menu
+		nav__menu--item
+		nav__menu--link
+	nav__menu1
+		nav__menu1--item
+		nav__menu1--icon
+menu__header
+	menu__header--title
+	menu__header--subjection
+	main__header--description
+	menu__header--button
+
+main__item
+	main__item--content
+	main__item--title
+	main__item--text	
+	alarm
+	linegraph
+	computer
+	book
+	home
+	image
+main__member--list
+	main__member--item
+	main__member--photo
+	main__member--overlay
+	main__member--socials
+		main__member--icons
+	main__member--descr
+	main__member--name
+	main__member--position
+footer__wrapper
+	footer__wrapper--text
+	footer__wrapper--link
+	footer__wrapper--form
+	footer__wrapper--email
+	footer__wrapper--button
