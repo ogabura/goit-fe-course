@@ -41,7 +41,7 @@ ul {
   list-style-type: none;
 }
 
-link {
+.link {
   display: block;
   text-decoration: none;
 }
@@ -67,12 +67,12 @@ link {
   text-align: center;
 }
 
-.header__container {
+.header {
   position: absolute;
   z-index: 1;
 }
 
-.nav__wrapper {
+.nav {
   display: flex;
   min-height: 65px;
   flex-wrap: wrap;
@@ -101,39 +101,35 @@ link {
 }
 
 .logo {
-  display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  text-decoration: none;
   line-height: 34px;
   color: #fff;
 }
 
-.logo-uppercase {
+.logo__uppercase {
   text-transform: uppercase;
 }
 
-.nav__menu--link {
+.nav__link {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  display: block;
   padding: 5px 16px;
   text-transform: uppercase;
-  text-decoration: none;
   position: relative;
 }
 
-.nav__menu--link:hover,
-.nav__menu--link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: #fce38a;
   transition: 0.5s;
 }
 
-.nav__menu--link::after {
+.nav__link::after {
   background-color: #fce38a;
   display: block;
   content: "";
@@ -145,22 +141,18 @@ link {
   transform: translateX(-50%);
 }
 
-.nav__menu--link:hover::after,
-.nav__menu--link:focus::after {
+.nav__link:hover::after,
+.nav__link:focus::after {
   width: 70%;
 }
 
-.nav__menu1--icon {
+.nav__icon {
   fill: #fff;
 }
 
-.nav__menu1--icon:hover,
-.nav__menu1--icon:focus {
+.nav__icon:hover,
+.nav__icon:focus {
   fill: #fce38a;
-}
-
-.menu__item--hidden {
-  visibility: hidden;
 }
 
 .menu__header {
@@ -170,7 +162,7 @@ link {
   text-align: center;
 }
 
-.menu__header--title {
+.menu__title {
   margin: 0 auto;
   color: #fff;
   font-family: 'Kaushan Script', cursive;
@@ -180,7 +172,7 @@ link {
   line-height: 86px;
 }
 
-.menu__header--subjection {
+.menu__subjection {
   margin: 0 auto;
   margin-top: 38px;
   margin-bottom: 110px;
@@ -193,7 +185,7 @@ link {
   line-height: 140px;
 }
 
-.menu__header--button {
+.menu__button {
   border-style: solid;
   border-width: 3px;
   border-color: #fff;
@@ -209,8 +201,8 @@ link {
   text-transform: uppercase;
 }
 
-.menu__header--button:hover,
-.menu__header--button:focus {
+.menu__button:hover,
+.menu__button:focus {
   background-color: #f38181;
   color: #fff;
   outline: none;
@@ -228,7 +220,7 @@ link {
   margin-bottom: 66px;
 }
 
-.main__header--title {
+.main__title {
   margin: 0 auto 26px;
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
@@ -237,7 +229,7 @@ link {
   color: #333;
 }
 
-.main__header--subjection {
+.main__subjection {
   margin: 0 auto;
   color: #333;
   font-family: 'Montserrat', sans-serif;
@@ -247,7 +239,7 @@ link {
   text-transform: uppercase;
 }
 
-.main__header--subjection::after {
+.main__subjection::after {
   margin: 0 auto;
   margin-top: 42px;
   display: block;
@@ -257,7 +249,7 @@ link {
   content: "";
 }
 
-.main__header--description {
+.main__description {
   margin: 0 auto;
   margin-top: 46px;
   font-family: 'Roboto', sans-serif;
@@ -309,27 +301,27 @@ link {
   text-align: left;
 }
 
-.alarm::before {
+.icon__alarm::before {
   background: url(../img/icons/ALARM.svg) 50% 50% no-repeat;
 }
 
-.linegraph::before {
+.icon__linegraph::before {
   background: url(../img/icons/LINEGRAPH.svg) 50% 50% no-repeat;
 }
 
-.computer::before {
+.icon__computer::before {
   background: url(../img/icons/COMPUTEROK.svg) 50% 50% no-repeat;
 }
 
-.book::before {
+.icon__book::before {
   background: url(../img/icons/BOOK2.svg) 50% 50% no-repeat;
 }
 
-.home::before {
+.icon__home::before {
   background: url(../img/icons/HOME.svg) 50% 50% no-repeat;
 }
 
-.image::before {
+.icon__image::before {
   background: url(../img/icons/IMAGE.svg) 50% 50% no-repeat;
 }
 
