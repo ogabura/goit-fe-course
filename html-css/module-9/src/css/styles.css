@@ -288,7 +288,7 @@ p {
     min-height: 698px;
     background: url(../img/bg-img_desktop.png) 100% 100% no-repeat #1a1915;
     background-size: cover;
-  background-position: center;
+    background-position: center;
   }
 
   .nav-menu {
