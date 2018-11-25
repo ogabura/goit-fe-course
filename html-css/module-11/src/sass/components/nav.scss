@@ -1,0 +1,47 @@
+.nav {
+  @include center-flex('all');
+  min-height: 65px;
+  flex-wrap: wrap;
+
+  &__link {
+    font-family: $subjection-font-style;
+    color: $font-color-lite;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 5px 16px;
+    text-transform: uppercase;
+    position: relative;
+  
+    &:hover,
+    &:focus {
+      color: $base-fontcolor-lite;
+      transition: 0.5s;
+    }
+  
+    &::after {
+      background-color: $base-fontcolor-lite;
+      display: block;
+      height: 2px;
+      content: "";
+      width: 0%;
+      left: 50%;
+      position: absolute;
+      transition: width 0.5s ease-in-out;
+      transform: translateX(-50%);
+    }
+  
+    &:hover::after,
+    &:focus::after {
+      width: 70%;
+    }
+  }
+
+  &__list {
+    @include center-flex('ver');
+    @include space-between-flex('hor');    
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+}

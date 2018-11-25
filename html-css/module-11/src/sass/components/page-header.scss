@@ -1,0 +1,16 @@
+.page-header {
+  margin: 0 auto;
+  @include center-flex('hor');
+  flex-wrap: wrap;
+  min-height: 1000px;
+  background: linear-gradient(to top, $base-color-light 0%, $base-color-dark 100%), url(../images/Layer15.png) 100% 100% no-repeat transparent;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(to top, $base-color-light 0%, $base-color-dark 100%), url(../images/Layer15@2x.png) 100% 100% no-repeat transparent;
+    background-size: cover;
+    background-position: center;
+  }
+}

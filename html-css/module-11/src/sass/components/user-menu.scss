@@ -1,0 +1,13 @@
+.user-menu__list {
+  width: 90px;
+  padding: 5px 16px;
+}
+
+.user-menu__icon {
+  fill: $font-color-lite;
+}
+
+.user-menu__item:hover .user-menu__icon,
+.user-menu__item:hover .user-menu__icon:focus {
+  fill: $base-fontcolor-lite;
+}

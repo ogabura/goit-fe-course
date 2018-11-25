@@ -1,4 +1,22 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'normalize';
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
+
+
+@import 'helpers/base.scss';
+
+/* components*/
+
+@import 'components/link.scss';
+@import 'components/list.scss';
+@import 'components/container.scss';
+@import 'components/page-header.scss';
+@import 'components/nav.scss';
+@import 'components/site-navigation.scss';
+@import 'components/user-menu.scss';
+@import 'components/site-logo.scss';
+@import 'components/header.scss';
+@import 'components/services.scss';
