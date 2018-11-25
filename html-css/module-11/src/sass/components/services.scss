@@ -46,7 +46,7 @@
     background-position: 50% 50%;
 
     &--alarm::before {
-      $feature-icon-color;
+      fill: $feature-icon-color;
       background-image: url(../images/feature_icons.svg#ALARM);
     }
     
