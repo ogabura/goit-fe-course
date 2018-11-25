@@ -253,7 +253,7 @@ h1,h2,h3,h4,p {
     }
     .page-header {
         min-height: 698px; 
-        background: url(../img/bg-img_desktop.png) no-repeat #1a1915;
+        background: url(../img/bg-img_desktop.png) 100% 100% no-repeat #1a1915;
     }
     .nav-menu {
         margin-bottom: 0;
