@@ -75,17 +75,9 @@ gulp.task('sprite', () => {
     .pipe(gulp.dest('./build/images'));
 });
 
-gulp.task('sprite_icons', () => {
-  return gulp
-  .src(['./src/images/icons/features/*.svg', '!./src/images/sprite/user_*.svg'])
-  .pipe(svgstore({ inlineSvg: true }))
-  .pipe(rename('feature_icons.svg'))
-  .pipe(gulp.dest('./build/images'));
-});
-
 gulp.task('user_icons', () => {
   return gulp
-  .src('./src/images/icons/features/user_*.svg')
+  .src('./src/images/icons/user_menu/user_*.svg')
   .pipe(svgstore({ inlineSvg: true }))
   .pipe(rename('user_icons.svg'))
   .pipe(gulp.dest('./build/images'));
@@ -93,7 +85,7 @@ gulp.task('user_icons', () => {
 
 gulp.task('images', () => {
   return gulp
-    .src(['./src/images/**/*.{png,jpg,jpeg,svg}', '!./src/images/icons/**/*', '!./src/images/sprite/**/*'])
+    .src(['./src/images/**/*.{png,jpg,jpeg,svg}', '!./src/images/icons/user_menu/**/*', '!./src/images/sprite/**/*'])
     .pipe(
       imagemin([
         imagemin.jpegtran({ progressive: true }),
@@ -136,7 +128,7 @@ gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
 gulp.task('build', callback =>
   sequence(
     'del:build',
-    ['sprite', 'user_icons', 'sprite_icons', 'images', 'fonts', 'styles', 'html', 'scripts'],
+    ['sprite', 'user_icons', 'images', 'fonts', 'styles', 'html', 'scripts'],
     callback
   )
 );

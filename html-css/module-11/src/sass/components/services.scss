@@ -47,27 +47,28 @@
 
     &--alarm::before {
       fill: $feature-icon-color;
-      background-image: url(../images/feature_icons.svg#ALARM);
+      background-image: url(../images/icons/features/alarm.svg);
+      fill: $feature-icon-color;
     }
     
     &--linegraph::before {
-      background-image: url(../images/feature_icons.svg#LINEGRAPH);
+      background-image: url(../images/icons/features/LINEGRAPH.svg);
     }
     
     &--computer::before {
-      background-image: url(../images/feature_icons.svg#COMPUTEROK);
+      background-image: url(../images/icons/features/COMPUTEROK.svg);
     }
     
     &--book::before {
-      background-image: url(../images/feature_icons.svg#BOOK2);
+      background-image: url(../images/icons/features/BOOK2.svg);
     }
     
     &--home::before {
-      background-image: url(../images/feature_icons.svg#HOME);
+      background-image: url(../images/icons/features/HOME.svg);
     }
     
     &--image::before {
-      background-image: url(../images/feature_icons.svg#IMAGE);
+      background-image: url(../images/icons/features/IMAGE.svg);
     }
   }
   
