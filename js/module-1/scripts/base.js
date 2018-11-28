@@ -19,12 +19,15 @@ if (login === cancel ) {
   } else 
     if (login === adminLogin) { 
       const pass = prompt (' Введите пароль:'); /* ввод пароля только если логин совпал */
-      if (pass === adminPassword) {
-        alert (welcomeMessage);
+      if (pass === cancel ) {
+        alert (cancelMessage);
+        } else 
+          if (pass === adminPassword) {
+            alert (welcomeMessage);
+          } else {
+            alert (badPassMessage);
+          }
       } else {
-        alert (badPassMessage);
-      }
-    } else {
-      alert (badLoginMessage);
+        alert (badLoginMessage);
     }
   ;
