@@ -628,7 +628,7 @@ input[type="radio"].visually-hidden {
 
 .services__icon--alarm::before {
   fill: #95e1d3;
-  background-image: url(../images/icons/features/alarm.svg);
+  background-image: url(../images/icons/features/ALARM.svg);
   fill: #95e1d3;
 }
 
